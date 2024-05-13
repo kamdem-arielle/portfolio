@@ -1,0 +1,19 @@
+# Node.js dependencies
+node_modules/
+
+# Parcel cache
+.cache/
+.parcel-cache
+
+# Build output
+dist/
+
+# IDE or text editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
