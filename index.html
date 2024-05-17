@@ -334,20 +334,20 @@
             <p>Got a question or proposal, or just want
                 to say hello? Go ahead.</p>
         </div>
-     <form action="" class="contact-form">
+     <form action="http://localhost/port/sendmail/sendmail.php" method="POST" class="contact-form">
         <div class="contact-form-1">
             <div class="contact-form-1-input">
                 <label for="name">Your name</label>
-                <input type="text" name="" id="name" placeholder="Enter your name" required>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
             </div>
             <div class="contact-form-1-input">
                 <label for="email">Email Adress</label>
-                <input type="email" name="" id="email" placeholder="Enter your email address" required>
+                <input type="email" name="email" id="email" placeholder="Enter your email address" required>
             </div>
         </div>
         <div class="contact-form-2">
          <label for="message">Your message</label>
-          <textarea name="" id="message" cols="20" style="resize: none;overflow-y: scroll;" placeholder="Hi, I think we need a design system for our products at Company X. How soon can you hop on to discuss this?" required></textarea>
+          <textarea name="message" id="message" cols="20" style="resize: none;overflow-y: scroll;" placeholder="Hi, I think we need a design system for our products at Company X. How soon can you hop on to discuss this?" required></textarea>
         </div>
         <button class="contact-button" type="submit">
             <div class="contact-button-cont">
