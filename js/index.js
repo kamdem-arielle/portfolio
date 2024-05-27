@@ -8,7 +8,38 @@ import ScrollReveal from 'scrollreveal';
 //     smoothMobile: false,
 // });
 
+const forms = document.forms
+console.log(forms)
+if(forms.length){
+for (const form of forms) {
+    form.addEventListener("submit",formSubmitAction)
+}
+}
 
+async function formSubmitAction(e){
+    console.log(e)
+    e.preventDefault();
+    const form = e.target;
+    const formAction = form.getAttribute("action")?form.getAttribute("action").trim() : "#" ;
+    const formMethod = form.getAttribute("method")?form.getAttribute("method").trim() : "get"
+    const formData = new FormData(form)
+
+    form.classList.add("form-sending")
+
+    const response = await fetch(formAction,{
+        method : formMethod,
+        body : formData
+    })
+    console.log(response)
+    if(response.ok) {
+        alert('Form Sent!')
+        form.classList.remove("form-sending")
+        form.reset()
+    }else{
+        alert('Form Error!')
+        form.classList.remove("form-sending")
+    }
+}
 
 ScrollReveal({
     reset:false,
