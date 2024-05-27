@@ -509,6 +509,9 @@ html.sr .load-hidden {
     .skillset li {
       font-size: 15px;
     }
+    .boots{
+      height: 48px;
+    }
   }
   @media screen and (max-width: 807px) {
     flex-direction: column;
@@ -555,6 +558,10 @@ html.sr .load-hidden {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+}
+.boots{
+  align-self: center;
+  height: 56px;
 }
 .skill-img img {
   width: 50px;
