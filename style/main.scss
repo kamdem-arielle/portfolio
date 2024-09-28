@@ -273,6 +273,7 @@ html.sr .load-hidden {
     .hamburger,.myname{
       position: relative;
       z-index: 1000;
+      -webkit-transform: translateZ(0);
     }
 
     .myname{
