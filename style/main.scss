@@ -593,7 +593,7 @@ html.sr .load-hidden {
   display: flex;
   position: relative;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     .project-cont-img-cont,
     .project-cont-desc-cont {
       grid-area: 1 / 1 / span 3 / -1;
@@ -655,8 +655,9 @@ html.sr .load-hidden {
   align-items: center;
 }
 .project-cont-img-cont img {
-  height: 80%;
+  height: 91%;
   width: 100%;
+  filter: saturate(0.5);
 }
 .project-cont-desc-cont {
   grid-column: 7/-1;
@@ -742,7 +743,7 @@ html.sr .load-hidden {
     margin: 0px 15px 5px 0px;
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 750px) {
     .project-cont-img-cont,
     .project-cont-desc-cont {
       grid-column: 1/-1 !important;
