@@ -392,7 +392,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (button) {
     var navbar = document.querySelector('.landingpage');
     var page = document.querySelector('.main-block');
-    var link = document.querySelector('.navbar_link');
+    var links = document.querySelectorAll('.navbar_link');
     button.addEventListener('click', function() {
         navbar.classList.toggle('active');
         page.classList.toggle('active');
@@ -400,20 +400,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }    
 
     // Remove the 'active' class only if both navbar and page have the 'active' class
-    if (link && navbar && page) {
-        link.addEventListener('click', function() {
+    if (links && navbar && page) {
+        links.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            // Remove 'active' class only if both navbar and page have it
             if (navbar.classList.contains('active') && page.classList.contains('active')) {
                 navbar.classList.remove('active');
                 page.classList.remove('active');
             }
 
-             // Allow the default action of navigating to the href section
+            // Scroll to the section referenced in the href attribute of the clicked link
             var targetSection = document.querySelector(link.getAttribute('href'));
             if (targetSection) {
                 event.preventDefault(); // Prevent default link behavior temporarily
                 targetSection.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the section
             }
         });
+    });
     }
 })
 </script>
