@@ -426,16 +426,16 @@ html.sr .load-hidden {
   width: 270px;
   height: 270px;
 }
-.about-me-image:hover::after {
-  transform: translate(6px, 6px);
-}
-.about-me-image:hover img,
-.about-me-image:hover::before {
-  transform: translate(-6px, -6px) !important;
-}
-.about-me-image:hover::before {
-  opacity: 0;
-}
+// .about-me-image:hover::after {
+//   transform: translate(6px, 6px);
+// }
+// .about-me-image:hover img,
+// .about-me-image:hover::before {
+//   transform: translate(-6px, -6px) !important;
+// }
+// .about-me-image:hover::before {
+//   opacity: 0;
+// }
 .about-me-image::before {
   content: "";
   position: absolute;
