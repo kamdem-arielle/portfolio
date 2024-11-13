@@ -1171,12 +1171,12 @@ html.sr .load-hidden {
  95% { transform: rotate(-25deg); }
 100% { transform: rotate(0deg); }
 }
-.test{
+.project-img-link{
   position: relative;
   background-color: #463259;
 }
 
-.test::before{
+.project-img-link::before{
   content: "";
   position: absolute;
   width: 100%;
