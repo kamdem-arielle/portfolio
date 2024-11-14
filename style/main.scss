@@ -502,7 +502,7 @@ html.sr .load-hidden {
 
   @media screen and (max-width: 900px) {
     .skill-img img {
-      width: 50px !important;
+      width: 44px !important;
       margin-left: 0px !important;
     }
     .skillset h4 {
@@ -560,6 +560,9 @@ html.sr .load-hidden {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
+  @media screen and (max-width: 450px) {
+    justify-content: space-between;  
+  }
 }
 .boots{
   align-self: center;
